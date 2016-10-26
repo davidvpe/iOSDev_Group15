@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //Cambiar el color de los iconos seleccionados
+        UITabBar.appearance().tintColor = UIColor.white
+        
+        //Cambiar el color de la barra
+        UITabBar.appearance().barTintColor = UIColor.black
+        
         // Override point for customization after application launch.
         return true
     }
