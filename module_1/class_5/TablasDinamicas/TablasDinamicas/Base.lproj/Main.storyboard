@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8jY-bk-2J5">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TablasDinamicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v0U-fO-lzl">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="hSo-gV-eNy" customClass="FruitCell" customModule="TablasDinamicas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hSo-gV-eNy" id="nrx-FD-Xab">
+                                            <frame key="frameInset" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zra-po-hRR"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6J-Te-Ta3">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="1am-7G-eLV"/>
+                                                        <constraint firstAttribute="width" constant="200" id="7a9-6X-Xrv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.26478407118055558" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="2" height="2"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zra-po-hRR" firstAttribute="top" secondItem="nrx-FD-Xab" secondAttribute="top" id="4d4-9E-5IO"/>
+                                                <constraint firstAttribute="trailing" secondItem="zra-po-hRR" secondAttribute="trailing" id="5Fm-yT-EPP"/>
+                                                <constraint firstItem="a6J-Te-Ta3" firstAttribute="centerY" secondItem="nrx-FD-Xab" secondAttribute="centerY" id="A7B-bc-bd5"/>
+                                                <constraint firstItem="zra-po-hRR" firstAttribute="leading" secondItem="nrx-FD-Xab" secondAttribute="leading" id="lVj-mt-ZNr"/>
+                                                <constraint firstAttribute="bottom" secondItem="zra-po-hRR" secondAttribute="bottom" id="neM-Hs-KmJ"/>
+                                                <constraint firstItem="a6J-Te-Ta3" firstAttribute="centerX" secondItem="nrx-FD-Xab" secondAttribute="centerX" id="z1u-eR-p69"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgFruit" destination="zra-po-hRR" id="fba-bg-bIy"/>
+                                            <outlet property="lblFruit" destination="a6J-Te-Ta3" id="TwX-Qp-oKM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BTe-Fo-U5c"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HGz-ft-STn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v0U-fO-lzl" secondAttribute="bottom" id="Jug-l9-8es"/>
+                            <constraint firstItem="v0U-fO-lzl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NEd-MP-tbm"/>
+                            <constraint firstItem="v0U-fO-lzl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PUW-rx-fZ1"/>
+                            <constraint firstAttribute="trailing" secondItem="v0U-fO-lzl" secondAttribute="trailing" id="TQt-rn-Kma"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oEC-VU-bI0"/>
+                    <connections>
+                        <segue destination="xwr-SU-Bai" kind="show" identifier="fromTableToImage" id="vpt-we-7YI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="111.99400299850076"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="K2o-Yr-hvo">
+            <objects>
+                <viewController id="xwr-SU-Bai" customClass="ImageViewController" customModule="TablasDinamicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uDw-9W-9ip"/>
+                        <viewControllerLayoutGuide type="bottom" id="Urt-0y-8EJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ff-Hk-wWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-Qu-Lrq"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2gi-Qu-Lrq" firstAttribute="top" secondItem="3Ff-Hk-wWe" secondAttribute="top" id="G6E-aq-tpq"/>
+                            <constraint firstAttribute="trailing" secondItem="2gi-Qu-Lrq" secondAttribute="trailing" id="cjF-cU-Zsh"/>
+                            <constraint firstItem="2gi-Qu-Lrq" firstAttribute="leading" secondItem="3Ff-Hk-wWe" secondAttribute="leading" id="gjx-cF-ylc"/>
+                            <constraint firstItem="2gi-Qu-Lrq" firstAttribute="bottom" secondItem="Urt-0y-8EJ" secondAttribute="top" id="hty-j9-4o9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageFruit" destination="2gi-Qu-Lrq" id="yCV-af-sG8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2O-Xz-Wth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2130" y="16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R2D-yp-yhx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8jY-bk-2J5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eob-QQ-Mx8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Lw-2s-lpY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puA-Ut-ZFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
