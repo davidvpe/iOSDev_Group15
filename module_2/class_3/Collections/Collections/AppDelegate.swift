@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  Chambas
+//  Collections
 //
-//  Created by David Velarde on 11/3/16.
+//  Created by David Velarde on 11/24/16.
 //  Copyright © 2016 Area51. All rights reserved.
 //
 
 import UIKit
-import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-    GMSServices.provideAPIKey("AIzaSyBFynQFOTdD30_GROlFugyCWQdwsgBDPVs")
-        
         return true
     }
 
@@ -44,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
 
 }
 
