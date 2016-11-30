@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W2W-WV-GQf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EN-gH-zS5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="sy7-aD-lYN" kind="embed" id="j3r-se-mvc"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpo-jP-Dhe">
+                                <rect key="frame" x="46" y="607" width="283" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.63612196180000002" blue="0.34966362849999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vat-xJ-9c5"/>
+                                </constraints>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6EN-gH-zS5" secondAttribute="trailing" id="0Ao-bY-J9q"/>
+                            <constraint firstItem="6EN-gH-zS5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="69L-Bj-yKG"/>
+                            <constraint firstItem="rpo-jP-Dhe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="AeQ-ug-Z2V"/>
+                            <constraint firstItem="6EN-gH-zS5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ibi-VZ-uvd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6EN-gH-zS5" secondAttribute="bottom" id="VUd-Rc-FEZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rpo-jP-Dhe" secondAttribute="bottom" constant="30" id="gj1-K6-IqX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rpo-jP-Dhe" secondAttribute="trailing" constant="30" id="sGm-2y-JO5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I4L-OK-cdX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="-444"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QPY-cK-NsR">
+            <objects>
+                <viewController storyboardIdentifier="RedVC" id="BOJ-TH-Wav" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n7s-W5-vVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="HOk-hO-oC8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J01-oU-MXo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJq-fA-XXK">
+                                <rect key="frame" x="46" y="50" width="283" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.63612196180555558" blue="0.34966362847222221" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oXS-nD-uAb"/>
+                                </constraints>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZJq-fA-XXK" secondAttribute="trailing" constant="30" id="0vG-Fi-Zyf"/>
+                            <constraint firstItem="ZJq-fA-XXK" firstAttribute="leading" secondItem="J01-oU-MXo" secondAttribute="leadingMargin" constant="30" id="Yot-lg-Xea"/>
+                            <constraint firstItem="ZJq-fA-XXK" firstAttribute="top" secondItem="n7s-W5-vVc" secondAttribute="bottom" constant="30" id="us2-Lu-dU4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4x-Mb-DjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pLj-P0-Ca4">
+            <objects>
+                <viewController storyboardIdentifier="GreenVC" id="Qcz-v9-B4f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MUV-yt-4PL"/>
+                        <viewControllerLayoutGuide type="bottom" id="okb-m3-spl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjt-C2-cdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe1-GJ-TEh">
+                                <rect key="frame" x="46" y="50" width="283" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.63612196180000002" blue="0.34966362849999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IbF-Uc-8u2"/>
+                                </constraints>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oe1-GJ-TEh" secondAttribute="trailing" constant="30" id="EWV-98-BYU"/>
+                            <constraint firstItem="Oe1-GJ-TEh" firstAttribute="top" secondItem="MUV-yt-4PL" secondAttribute="bottom" constant="30" id="Q5W-pF-FR8"/>
+                            <constraint firstItem="Oe1-GJ-TEh" firstAttribute="leading" secondItem="cjt-C2-cdW" secondAttribute="leadingMargin" constant="30" id="WCD-Sh-j44"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ni-zW-dbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OnV-h5-9zW">
+            <objects>
+                <viewController storyboardIdentifier="BlueVC" id="yts-r8-I77" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GgV-0s-fP6"/>
+                        <viewControllerLayoutGuide type="bottom" id="qI3-EP-iOg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tQE-rR-u4H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-Wj-dMF">
+                                <rect key="frame" x="46" y="50" width="283" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.63612196180000002" blue="0.34966362849999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Htz-um-vud"/>
+                                </constraints>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dEG-Wj-dMF" firstAttribute="top" secondItem="GgV-0s-fP6" secondAttribute="bottom" constant="30" id="8uP-wV-WiT"/>
+                            <constraint firstItem="dEG-Wj-dMF" firstAttribute="leading" secondItem="tQE-rR-u4H" secondAttribute="leadingMargin" constant="30" id="DPV-BK-l4D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dEG-Wj-dMF" secondAttribute="trailing" constant="30" id="Pl9-KV-wpZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFm-hW-Ojg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="252"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LNy-ku-YoU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W2W-WV-GQf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VBe-nb-hJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yve-W6-ghL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAH-i5-9IE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="-41"/>
+        </scene>
+        <!--My Page Controller-->
+        <scene sceneID="8yP-AO-BUn">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="sy7-aD-lYN" customClass="MyPageController" customModule="LoginFacebook" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUN-kH-589" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="-445"/>
+        </scene>
+    </scenes>
+</document>
