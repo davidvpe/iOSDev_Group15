@@ -13,6 +13,14 @@ import FacebookLogin
 
 
 class ViewController: UIViewController {
+    @IBAction func btnLogin(_ sender: Any) {
+        
+        let texto = "Hola desde mi aplicacion"
+        let image = UIImage()
+        let activity = UIActivityViewController(activityItems: [texto,image], applicationActivities: nil)
+        self.present(activity, animated: true, completion: nil)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
