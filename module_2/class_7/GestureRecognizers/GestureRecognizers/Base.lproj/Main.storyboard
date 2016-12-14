@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I6u-Tj-4FW">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1s7-Vb-f0A">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="215.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9If-6C-ZbB">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="215.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Iu-5Z-hst">
+                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="215.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="0Iu-5Z-hst" firstAttribute="top" secondItem="9If-6C-ZbB" secondAttribute="top" id="7ds-bE-4qS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0Iu-5Z-hst" secondAttribute="trailing" id="RFN-JU-sGi"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0Iu-5Z-hst" secondAttribute="bottom" id="S1B-h5-i7a"/>
+                                                    <constraint firstItem="0Iu-5Z-hst" firstAttribute="leading" secondItem="9If-6C-ZbB" secondAttribute="leading" id="jbX-cQ-sVk"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="5mc-Vg-PUc" appends="YES" id="grD-wc-Kvf"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rA8-Qg-TOF">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="215.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsb-hm-8WC">
+                                                        <rect key="frame" x="-0.5" y="0.0" width="172" height="215.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.2956814236111111" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="gsb-hm-8WC" firstAttribute="top" secondItem="rA8-Qg-TOF" secondAttribute="top" id="1TM-Z8-bFe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gsb-hm-8WC" secondAttribute="trailing" id="F76-qV-bli"/>
+                                                    <constraint firstItem="gsb-hm-8WC" firstAttribute="leading" secondItem="rA8-Qg-TOF" secondAttribute="leading" id="N0Q-C3-Nhg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gsb-hm-8WC" secondAttribute="bottom" id="Qml-st-7MX"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yTk-3a-idO" appends="YES" id="GiT-ys-6Gl"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jdi-tj-Sen">
+                                        <rect key="frame" x="0.0" y="215.5" width="343" height="216"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmB-kG-ih6">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="216"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NQ-oF-kgQ">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="171.5" height="216"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="5NQ-oF-kgQ" secondAttribute="bottom" id="5f0-Ft-LUf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5NQ-oF-kgQ" secondAttribute="trailing" id="NqZ-dJ-hdS"/>
+                                                    <constraint firstItem="5NQ-oF-kgQ" firstAttribute="leading" secondItem="XmB-kG-ih6" secondAttribute="leading" id="f0J-F4-6cZ"/>
+                                                    <constraint firstItem="5NQ-oF-kgQ" firstAttribute="top" secondItem="XmB-kG-ih6" secondAttribute="top" id="rxo-rr-CTB"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="bg9-K3-FQr" appends="YES" id="Qa7-8k-5H5"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtP-Sq-fyE">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="216"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyH-z5-Ma4">
+                                                        <rect key="frame" x="-0.5" y="-0.5" width="172" height="216"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.58786349826388884" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="XyH-z5-Ma4" firstAttribute="leading" secondItem="MtP-Sq-fyE" secondAttribute="leading" id="9lO-fv-GFt"/>
+                                                    <constraint firstItem="XyH-z5-Ma4" firstAttribute="top" secondItem="MtP-Sq-fyE" secondAttribute="top" id="EFN-BY-wef"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XyH-z5-Ma4" secondAttribute="trailing" id="GKe-ny-Brc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XyH-z5-Ma4" secondAttribute="bottom" id="aLo-t2-Sqw"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8vP-co-Mxj" appends="YES" id="IXr-jL-5cb"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dmp-6A-QqW">
+                                        <rect key="frame" x="0.0" y="431.5" width="343" height="215.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSj-hJ-VDf">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="215.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdz-RX-eoQ">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="171.5" height="215.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.63351779513888884" blue="0.14998372395833334" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Cdz-RX-eoQ" secondAttribute="trailing" id="9KL-Aa-5Ka"/>
+                                                    <constraint firstItem="Cdz-RX-eoQ" firstAttribute="top" secondItem="wSj-hJ-VDf" secondAttribute="top" id="bHu-Xf-CmM"/>
+                                                    <constraint firstItem="Cdz-RX-eoQ" firstAttribute="leading" secondItem="wSj-hJ-VDf" secondAttribute="leading" id="enb-xC-fe4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Cdz-RX-eoQ" secondAttribute="bottom" id="mi5-P9-tNr"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="lSX-QA-UOB" appends="YES" id="4ki-lu-wUL"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE8-K6-uQ9">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="215.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Press" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFO-hL-DQi">
+                                                        <rect key="frame" x="-0.5" y="-0.5" width="172" height="215.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.529541015625" green="0.36881510416666669" blue="0.14998372395833334" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="bFO-hL-DQi" secondAttribute="bottom" id="8NI-je-BLl"/>
+                                                    <constraint firstItem="bFO-hL-DQi" firstAttribute="leading" secondItem="GE8-K6-uQ9" secondAttribute="leading" id="Rc0-UF-vwg"/>
+                                                    <constraint firstItem="bFO-hL-DQi" firstAttribute="top" secondItem="GE8-K6-uQ9" secondAttribute="top" id="gxf-Gd-VnV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bFO-hL-DQi" secondAttribute="trailing" id="oC6-1u-Ebj"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Fkz-55-99G" appends="YES" id="obd-xS-01J"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I6u-Tj-4FW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1fb-FU-FED"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I6u-Tj-4FW" secondAttribute="trailing" id="7Ha-SU-RKE"/>
+                            <constraint firstItem="I6u-Tj-4FW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FB3-mu-I4W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I6u-Tj-4FW" secondAttribute="bottom" id="HmF-mm-Mkg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5mc-Vg-PUc">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="Tqk-Qg-yoz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="yTk-3a-idO">
+                    <connections>
+                        <action selector="onPinch:" destination="BYZ-38-t0r" id="e7B-kr-K1Z"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="bg9-K3-FQr">
+                    <connections>
+                        <action selector="onRotation:" destination="BYZ-38-t0r" id="7D1-rc-idA"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="8vP-co-Mxj">
+                    <connections>
+                        <action selector="onSwipe:" destination="BYZ-38-t0r" id="BO9-fh-eWL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lSX-QA-UOB">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="3Lw-Q8-mop"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Fkz-55-99G">
+                    <connections>
+                        <action selector="onLongPress:" destination="BYZ-38-t0r" id="Ljq-pm-hQm"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>
