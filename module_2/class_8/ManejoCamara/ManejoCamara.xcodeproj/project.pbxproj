@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AACCA1D31E0383ED000F9BB0 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCA1D21E0383ED000F9BB0 /* ImageTableViewController.swift */; };
+		AACCA1D51E03846F000F9BB0 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCA1D41E03846F000F9BB0 /* PhotoCell.swift */; };
 		AAEC299C1E036280005137D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEC299B1E036280005137D6 /* AppDelegate.swift */; };
 		AAEC299E1E036280005137D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEC299D1E036280005137D6 /* ViewController.swift */; };
 		AAEC29A11E036280005137D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEC299F1E036280005137D6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AACCA1D21E0383ED000F9BB0 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		AACCA1D41E03846F000F9BB0 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		AAEC29981E036280005137D6 /* ManejoCamara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManejoCamara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEC299B1E036280005137D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAEC299D1E036280005137D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				AAEC29A21E036280005137D6 /* Assets.xcassets */,
 				AAEC29A41E036280005137D6 /* LaunchScreen.storyboard */,
 				AAEC29A71E036280005137D6 /* Info.plist */,
+				AACCA1D21E0383ED000F9BB0 /* ImageTableViewController.swift */,
+				AACCA1D41E03846F000F9BB0 /* PhotoCell.swift */,
 			);
 			path = ManejoCamara;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACCA1D51E03846F000F9BB0 /* PhotoCell.swift in Sources */,
 				AAEC299E1E036280005137D6 /* ViewController.swift in Sources */,
+				AACCA1D31E0383ED000F9BB0 /* ImageTableViewController.swift in Sources */,
 				AAEC299C1E036280005137D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +308,7 @@
 				AAEC29AC1E036280005137D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

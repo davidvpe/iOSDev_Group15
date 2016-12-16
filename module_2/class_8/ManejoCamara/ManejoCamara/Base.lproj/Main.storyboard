@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hjs-Pn-tfC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xky-fz-yfo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -96,6 +96,91 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Image Table View Controller-->
+        <scene sceneID="664-c1-QbL">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jiZ-jO-AVp" customClass="ImageTableViewController" customModule="ManejoCamara" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8eg-jz-9ax"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXc-WE-zSC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gWY-qp-qO3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="196" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tnQ-u8-XS6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" rowHeight="196" id="ckL-FC-Go6" customClass="PhotoCell" customModule="ManejoCamara" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="196"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ckL-FC-Go6" id="GIV-R0-9VH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-Km-T6Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="195.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="JdE-Km-T6Q" secondAttribute="bottom" id="6kn-bo-G3G"/>
+                                                <constraint firstItem="JdE-Km-T6Q" firstAttribute="leading" secondItem="GIV-R0-9VH" secondAttribute="leading" id="Ccj-cs-O5o"/>
+                                                <constraint firstItem="JdE-Km-T6Q" firstAttribute="top" secondItem="GIV-R0-9VH" secondAttribute="top" id="RcH-Ha-wJi"/>
+                                                <constraint firstAttribute="trailing" secondItem="JdE-Km-T6Q" secondAttribute="trailing" id="oIa-9Y-TVc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgPhoto" destination="JdE-Km-T6Q" id="yGk-JB-wF5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jiZ-jO-AVp" id="2ca-Ei-KrK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tnQ-u8-XS6" secondAttribute="trailing" id="2xT-4Y-SlS"/>
+                            <constraint firstItem="tnQ-u8-XS6" firstAttribute="top" secondItem="8eg-jz-9ax" secondAttribute="bottom" id="Woa-Tj-grN"/>
+                            <constraint firstItem="PXc-WE-zSC" firstAttribute="top" secondItem="tnQ-u8-XS6" secondAttribute="bottom" id="n33-Ts-c1r"/>
+                            <constraint firstItem="tnQ-u8-XS6" firstAttribute="leading" secondItem="gWY-qp-qO3" secondAttribute="leading" id="pCX-PW-ieY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U13-tn-FAv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kpd-le-cF0">
+                            <connections>
+                                <action selector="addPhoto:" destination="jiZ-jO-AVp" id="4gb-Xa-ahA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tvPhotos" destination="tnQ-u8-XS6" id="TeQ-Gm-C5x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYc-aR-XaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032.8" y="63.418290854572717"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s2H-sG-F2m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xky-fz-yfo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dum-PB-pWv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jiZ-jO-AVp" kind="relationship" relationship="rootViewController" id="UnP-nX-GPQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0A-Sk-UJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093.5999999999999" y="63.418290854572717"/>
         </scene>
     </scenes>
 </document>

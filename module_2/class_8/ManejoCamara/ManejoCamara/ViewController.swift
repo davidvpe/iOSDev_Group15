@@ -16,6 +16,7 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let imagePicker = UIImagePickerController()
         imagePicker.delegate = self;
         
     }
@@ -26,13 +27,15 @@ class ViewController: UIViewController{
     }
 
     @IBAction func takePicture(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self;
         imagePicker.sourceType = .camera
-        self.navigationController?.present(imagePicker, animated: true)
+        self.present(imagePicker, animated: true)
     }
     
     @IBAction func openGallery(_ sender: Any) {
         imagePicker.sourceType = .savedPhotosAlbum
-        self.navigationController?.present(imagePicker, animated: true)
+        self.present(imagePicker, animated: true)
     }
 
 }
