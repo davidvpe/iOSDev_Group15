@@ -15,10 +15,6 @@
 		AACC83011E1565C5004E4ABA /* CrashViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FA1E1565C5004E4ABA /* CrashViewController1.swift */; };
 		AACC83021E1565C5004E4ABA /* CrashViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FB1E1565C5004E4ABA /* CrashViewController2.swift */; };
 		AACC83031E1565C5004E4ABA /* CrashViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FC1E1565C5004E4ABA /* CrashViewController3.swift */; };
-		AACC83041E1565C5004E4ABA /* CrashViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FD1E1565C5004E4ABA /* CrashViewController4.swift */; };
-		AACC83051E1565C5004E4ABA /* CrashViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FE1E1565C5004E4ABA /* CrashViewController5.swift */; };
-		AACC83061E1565C5004E4ABA /* CrashViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FF1E1565C5004E4ABA /* CrashViewController6.swift */; };
-		AACC83071E1565C5004E4ABA /* CrashViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC83001E1565C5004E4ABA /* CrashViewController7.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +28,6 @@
 		AACC82FA1E1565C5004E4ABA /* CrashViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController1.swift; sourceTree = "<group>"; };
 		AACC82FB1E1565C5004E4ABA /* CrashViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController2.swift; sourceTree = "<group>"; };
 		AACC82FC1E1565C5004E4ABA /* CrashViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController3.swift; sourceTree = "<group>"; };
-		AACC82FD1E1565C5004E4ABA /* CrashViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController4.swift; sourceTree = "<group>"; };
-		AACC82FE1E1565C5004E4ABA /* CrashViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController5.swift; sourceTree = "<group>"; };
-		AACC82FF1E1565C5004E4ABA /* CrashViewController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController6.swift; sourceTree = "<group>"; };
-		AACC83001E1565C5004E4ABA /* CrashViewController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController7.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +65,6 @@
 				AACC82FA1E1565C5004E4ABA /* CrashViewController1.swift */,
 				AACC82FB1E1565C5004E4ABA /* CrashViewController2.swift */,
 				AACC82FC1E1565C5004E4ABA /* CrashViewController3.swift */,
-				AACC82FD1E1565C5004E4ABA /* CrashViewController4.swift */,
-				AACC82FE1E1565C5004E4ABA /* CrashViewController5.swift */,
-				AACC82FF1E1565C5004E4ABA /* CrashViewController6.swift */,
-				AACC83001E1565C5004E4ABA /* CrashViewController7.swift */,
 				AACC82EC1E155F0A004E4ABA /* Main.storyboard */,
 				AACC82EF1E155F0A004E4ABA /* Assets.xcassets */,
 				AACC82F11E155F0A004E4ABA /* LaunchScreen.storyboard */,
@@ -159,10 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACC82EB1E155F0A004E4ABA /* ViewController.swift in Sources */,
-				AACC83051E1565C5004E4ABA /* CrashViewController5.swift in Sources */,
-				AACC83041E1565C5004E4ABA /* CrashViewController4.swift in Sources */,
-				AACC83071E1565C5004E4ABA /* CrashViewController7.swift in Sources */,
-				AACC83061E1565C5004E4ABA /* CrashViewController6.swift in Sources */,
 				AACC83011E1565C5004E4ABA /* CrashViewController1.swift in Sources */,
 				AACC82E91E155F0A004E4ABA /* AppDelegate.swift in Sources */,
 				AACC83031E1565C5004E4ABA /* CrashViewController3.swift in Sources */,

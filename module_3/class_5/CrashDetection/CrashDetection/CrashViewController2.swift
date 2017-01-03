@@ -10,6 +10,7 @@ import UIKit
 
 class CrashViewController2 : UIViewController {
 
+    var number = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,9 +24,17 @@ class CrashViewController2 : UIViewController {
     @IBAction func pressMe(_ sender: Any) {
         
         let text = "abcdefghijk"
-        var number = Int(text)!
-        number += 1
-        self.title = "Numero \(number)"
+        
+        number = Int(text)!
+        
+        var texto = ""
+        
+        while(number >= 0){
+        
+            texto += "Reduciendo numero por -1\n"
+            
+        }
+        self.title = "\(texto)\n\nNumero \(number)"
         
         
     }
