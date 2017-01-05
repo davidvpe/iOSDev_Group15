@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AACC82E91E155F0A004E4ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82E81E155F0A004E4ABA /* AppDelegate.swift */; };
+		AACC82EB1E155F0A004E4ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82EA1E155F0A004E4ABA /* ViewController.swift */; };
+		AACC82EE1E155F0A004E4ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACC82EC1E155F0A004E4ABA /* Main.storyboard */; };
+		AACC82F01E155F0A004E4ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACC82EF1E155F0A004E4ABA /* Assets.xcassets */; };
+		AACC82F31E155F0A004E4ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACC82F11E155F0A004E4ABA /* LaunchScreen.storyboard */; };
+		AACC83011E1565C5004E4ABA /* CrashViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FA1E1565C5004E4ABA /* CrashViewController1.swift */; };
+		AACC83021E1565C5004E4ABA /* CrashViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FB1E1565C5004E4ABA /* CrashViewController2.swift */; };
+		AACC83031E1565C5004E4ABA /* CrashViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC82FC1E1565C5004E4ABA /* CrashViewController3.swift */; };
+		AAF6ED681E1C79DA00CF2363 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF6ED661E1C79DA00CF2363 /* Fabric.framework */; };
+		AAF6ED691E1C79DA00CF2363 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF6ED671E1C79DA00CF2363 /* Crashlytics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AACC82E51E155F0A004E4ABA /* CrashDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACC82E81E155F0A004E4ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AACC82EA1E155F0A004E4ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AACC82ED1E155F0A004E4ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AACC82EF1E155F0A004E4ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AACC82F21E155F0A004E4ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AACC82F41E155F0A004E4ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AACC82FA1E1565C5004E4ABA /* CrashViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController1.swift; sourceTree = "<group>"; };
+		AACC82FB1E1565C5004E4ABA /* CrashViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController2.swift; sourceTree = "<group>"; };
+		AACC82FC1E1565C5004E4ABA /* CrashViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController3.swift; sourceTree = "<group>"; };
+		AAF6ED661E1C79DA00CF2363 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		AAF6ED671E1C79DA00CF2363 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AACC82E21E155F0A004E4ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF6ED691E1C79DA00CF2363 /* Crashlytics.framework in Frameworks */,
+				AAF6ED681E1C79DA00CF2363 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AACC82DC1E155F0A004E4ABA = {
+			isa = PBXGroup;
+			children = (
+				AACC82E71E155F0A004E4ABA /* CrashDetection */,
+				AACC82E61E155F0A004E4ABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AACC82E61E155F0A004E4ABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AACC82E51E155F0A004E4ABA /* CrashDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AACC82E71E155F0A004E4ABA /* CrashDetection */ = {
+			isa = PBXGroup;
+			children = (
+				AACC82E81E155F0A004E4ABA /* AppDelegate.swift */,
+				AACC82EA1E155F0A004E4ABA /* ViewController.swift */,
+				AACC82FA1E1565C5004E4ABA /* CrashViewController1.swift */,
+				AACC82FB1E1565C5004E4ABA /* CrashViewController2.swift */,
+				AACC82FC1E1565C5004E4ABA /* CrashViewController3.swift */,
+				AACC82EC1E155F0A004E4ABA /* Main.storyboard */,
+				AACC82EF1E155F0A004E4ABA /* Assets.xcassets */,
+				AACC82F11E155F0A004E4ABA /* LaunchScreen.storyboard */,
+				AACC82F41E155F0A004E4ABA /* Info.plist */,
+				AAF6ED661E1C79DA00CF2363 /* Fabric.framework */,
+				AAF6ED671E1C79DA00CF2363 /* Crashlytics.framework */,
+			);
+			path = CrashDetection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AACC82E41E155F0A004E4ABA /* CrashDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AACC82F71E155F0A004E4ABA /* Build configuration list for PBXNativeTarget "CrashDetection" */;
+			buildPhases = (
+				AACC82E11E155F0A004E4ABA /* Sources */,
+				AACC82E21E155F0A004E4ABA /* Frameworks */,
+				AACC82E31E155F0A004E4ABA /* Resources */,
+				AAF6ED611E1C763600CF2363 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashDetection;
+			productName = CrashDetection;
+			productReference = AACC82E51E155F0A004E4ABA /* CrashDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AACC82DD1E155F0A004E4ABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Area51;
+				TargetAttributes = {
+					AACC82E41E155F0A004E4ABA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = XJY6K7P63P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AACC82E01E155F0A004E4ABA /* Build configuration list for PBXProject "CrashDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AACC82DC1E155F0A004E4ABA;
+			productRefGroup = AACC82E61E155F0A004E4ABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AACC82E41E155F0A004E4ABA /* CrashDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AACC82E31E155F0A004E4ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACC82F31E155F0A004E4ABA /* LaunchScreen.storyboard in Resources */,
+				AACC82F01E155F0A004E4ABA /* Assets.xcassets in Resources */,
+				AACC82EE1E155F0A004E4ABA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAF6ED611E1C763600CF2363 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 0359ee4f2f3e462360c49df42bdcf5ce471e87c1 a8fdeeb685fb1ef8784881a836a8b0dc4f65505616bfa27808c1d58225159cda";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AACC82E11E155F0A004E4ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACC82EB1E155F0A004E4ABA /* ViewController.swift in Sources */,
+				AACC83011E1565C5004E4ABA /* CrashViewController1.swift in Sources */,
+				AACC82E91E155F0A004E4ABA /* AppDelegate.swift in Sources */,
+				AACC83031E1565C5004E4ABA /* CrashViewController3.swift in Sources */,
+				AACC83021E1565C5004E4ABA /* CrashViewController2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AACC82EC1E155F0A004E4ABA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACC82ED1E155F0A004E4ABA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AACC82F11E155F0A004E4ABA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACC82F21E155F0A004E4ABA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AACC82F51E155F0A004E4ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AACC82F61E155F0A004E4ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AACC82F81E155F0A004E4ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XJY6K7P63P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CrashDetection",
+				);
+				INFOPLIST_FILE = CrashDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidvpe.CrashDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AACC82F91E155F0A004E4ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJY6K7P63P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CrashDetection",
+				);
+				INFOPLIST_FILE = CrashDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidvpe.CrashDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AACC82E01E155F0A004E4ABA /* Build configuration list for PBXProject "CrashDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACC82F51E155F0A004E4ABA /* Debug */,
+				AACC82F61E155F0A004E4ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AACC82F71E155F0A004E4ABA /* Build configuration list for PBXNativeTarget "CrashDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACC82F81E155F0A004E4ABA /* Debug */,
+				AACC82F91E155F0A004E4ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AACC82DD1E155F0A004E4ABA /* Project object */;
+}
